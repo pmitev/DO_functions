@@ -1,0 +1,15 @@
+packages:
+  - name: functions
+    actions:
+      - name: log
+        runtime: 'python:3.11'
+        limits:
+          memory: 128
+          timeout: 1000
+      - name: echo
+        runtime: 'python:3.11'
+        environment:
+          key1: "value 1"
+        limits:
+          memory: 128
+          timeout: 1000
