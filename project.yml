@@ -13,3 +13,9 @@ packages:
         limits:
           memory: 128
           timeout: 1000
+      - name: hotp
+        runtime: 'python:3.11'
+        environment:
+        limits:
+          memory: 128
+          timeout: 1000
